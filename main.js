@@ -7,20 +7,18 @@ const values=[];
 const images=[];
    
 
-
-
-
 for(let i=0; i<inp; i++){
         const value= Math.floor(Math.random()*6) + 1;
         values.push(value);
-       images.push(`<img src="dice/${value}.png "alt=Dice.${value}">`);
+       images.push(`<img src="dice/${value}.png" alt="Dice ${value}">`);
     }
 
-    dnum.textContent = `dice: ${values.join(', ')}`;
+    dnum.textContent = `Dice: ${values.join(', ')}`;
     dpic.innerHTML = images.join('');
 
 }
 let doneBtutton = document.getElementById("don-btn");
-doneBtutton.onclick = function named(){
-    function diceRoller(){};
+doneBtutton.onclick = function(event){
+    event.preventDefault();
+    diceRoller();
 }

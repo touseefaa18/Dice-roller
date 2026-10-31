@@ -63,7 +63,18 @@ header{
 }
 .dice-num{
     width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    font-size: large;
+    font-weight: 700;
 }
 .dice-pic{
     width: 80%;
+    margin: auto;
+}
+
+.dice-pic img{
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
 }
